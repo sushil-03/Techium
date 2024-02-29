@@ -112,12 +112,12 @@ const ArticlePage = () => {
   return (
     <PageLayout>
       <div className="w-full h-full pt-10">
-        <div className="h-full px-4 md:px-8">
+        <div className="h-full sm:px-4 px-2 md:px-8">
           <Banner />
           {data ? (
             <div className="flex h-full gap-8 mt-16 ">
               {/* Left side Navigation Panel */}
-              <div className="w-0 tab:w-1/5">
+              <div className=" tab:w-1/5 ">
                 {/* For large Screen */}
                 {h1Data?.length > 0 && (
                   <div className="w-full sticky top-36 hidden min-h-[500px]  tab:block mt-8  mb-72">
@@ -166,9 +166,8 @@ const ArticlePage = () => {
                   </div>
                 )}
               </div>
-
               {/* Right Side Content */}
-              <div className="w-11/12 mx-auto md:w-4/5 tab:w-2/3 tab:mx-0">
+              <div className="w-full mx-auto md:w-4/5 tab:w-2/3 tab:mx-0 ">
                 {/* Title ,Share links */}
                 <div className="w-full ">
                   <h1 className="text-2xl leading-8 font-gt-super-ds-trial tab:text-5xl md:text-4xl sm:text-3xl tab:leading-16 md:leading-12 sm:leading-10 dark:text-textColor-dark text-textColor-light">
@@ -233,7 +232,7 @@ const ArticlePage = () => {
         </div>
       </div>
       {/* Related article */}
-      <div className="w-full h-full py-10  ">
+      <div className="w-full h-full md:py-10 py-0  ">
         <div className="w-11/12 mx-auto sm:w-4/5 lg:w-2/3 md:w-3/4">
           <h1 className="pb-20 text-4xl text-center font-gt-super-ds-trial pt-28 dark:text-textColor-dark text-textColor-light">
             Related Articles

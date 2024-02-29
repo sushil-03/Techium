@@ -8,10 +8,10 @@ export default function BlogCard({ data, className }: BlogCardProps) {
   const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
   return (
     <div
-      className={`rounded-[10px] flex flex-col  dark:bg-black bg-white 2xl:w-[400px] w-[380px] dark:text-textColor-dark
+      className={`rounded-[10px] flex flex-col  dark:bg-black bg-white 2xl:w-[400px] md:w-[380px] w-[340px] dark:text-textColor-dark
       text-textColor-light justify-between p-6 h-[350px] z-50 ${className}`}
     >
-      <p className="text-xl font-semibold font-gt-walsheim-regular">
+      <p className="md:text-xl text-lg font-semibold font-gt-walsheim-regular">
         {data?.title &&
           (data?.title.length > 50
             ? data?.title.substring(0, 50).concat("...")
@@ -28,7 +28,7 @@ export default function BlogCard({ data, className }: BlogCardProps) {
             className="h-full w-full object-fit"
           />
         </div>
-        <div className=" flex items-center flex-wrap justify-between">
+        <div className=" sm:flex hidden items-center flex-wrap justify-between">
           <span className="text-base font-gt-walsheim-regular font-medium ">
             {data?.category}
           </span>

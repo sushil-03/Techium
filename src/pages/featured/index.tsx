@@ -32,10 +32,10 @@ const FeaturedArticle = () => {
           {homeData ? (
             <div className="flex flex-col w-full gap-0 pt-24 xl:flex-row lg:gap-10 md:gap-6 sm:gap-4 dark:text-textColor-dark text-textColor-light">
               <div className="w-full  xl:w-1/2 text-brand-primary">
-                <div className="text-5xl font-gt-super-ds-trial lg:text-6xl lg:leading-16 leading-12 w-2/3 capitalize">
+                <div className="md:text-5xl sm:text-4xl text-3xl font-gt-super-ds-trial lg:text-6xl lg:leading-16 leading-12 w-2/3 capitalize">
                   Explore 4,424 <br /> Case Studies
                 </div>
-                <div className="w-full mt-6 text-xl leading-7  font-gt-walsheim-light md:w-4/5 sm:w-3/4  whitespace-pre-line	">
+                <div className="w-full mt-6 md:text-xl sm:text-lg  text-md leading-7  font-gt-walsheim-light md:w-4/5 sm:w-3/4  whitespace-pre-line	">
                   {parser(homeData.description.html)}
                 </div>
               </div>

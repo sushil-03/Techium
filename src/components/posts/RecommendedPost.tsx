@@ -72,7 +72,7 @@ const RecommendedPost = ({ posts }: { posts: any }) => {
 
   return (
     <div className="my-24 w-full">
-      <p className="text-5xl text-center dark:text-textColor-dark text-textColor-light font-gt-super-ds-trial">
+      <p className="md:text-5xl sm:text-4xl text-3xl text-center dark:text-textColor-dark text-textColor-light font-gt-super-ds-trial">
         Recommended Posts{" "}
       </p>
       <div className="flex lg:gap-8 mt-16 font-gt-walsheim relative">

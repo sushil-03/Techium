@@ -76,7 +76,7 @@ const PostCard = ({ data }: { data: any }) => {
   console.log("related post", relatedPost);
 
   return (
-    <div className="w-full px-6 py-6 dark:bg-neutral-900 dark:text-textColor-dark text-textColor-light bg-gray-100 md:px-8 overflow-hidden">
+    <div className="w-full sm:px-6 px-3 py-6 dark:bg-neutral-900 dark:text-textColor-dark text-textColor-light bg-gray-100 md:px-8 overflow-hidden">
       {/* header */}
       <Link href={`/posts/${data.id}`}>
         <div className="flex justify-between w-full gap-5 md:flex-row flex-col">
@@ -110,7 +110,7 @@ const PostCard = ({ data }: { data: any }) => {
         </div>
         {/* content */}
         <div className="mt-6 tracking-wide overflow-hidden text-ellipsis">
-          <p className="text-2xl font-gt-walsheim-regular">
+          <p className="md:text-2xl sm:text-xl text-lg font-gt-walsheim-regular ">
             {" "}
             {data.title &&
               (data.title.length > 100
@@ -118,7 +118,7 @@ const PostCard = ({ data }: { data: any }) => {
                 : data.title)}
           </p>
           {/* <p className="mt-2 text-brand-primary  w-5/6 h-12">{data.body}</p> */}
-          <div className="mt-2 dark:text-gray-300 text-gray-700  w-5/6 h-14 font-gt-walsheim-regular font-normal text-lg ">
+          <div className="mt-2 dark:text-gray-300 text-gray-700  w-5/6 h-14 font-gt-walsheim-regular font-normal md:text-lg sm:text-md text-sm">
             {data.freebody ? parse(data.freebody.html) : ""}
           </div>
         </div>
@@ -126,7 +126,12 @@ const PostCard = ({ data }: { data: any }) => {
       <div className="mt-6">
         <div className="flex justify-between items-center">
           <Link href={`/posts/${data.id}`}>
-            <Button variant="primary">Read Full Post</Button>
+            <Button
+              variant="primary"
+              className="md:text-base text-sm md:px-4 px-3"
+            >
+              Read Full Post
+            </Button>
           </Link>
           <div
             className="flex items-center gap-2"
@@ -135,7 +140,9 @@ const PostCard = ({ data }: { data: any }) => {
               setShowMore(!showMore);
             }}
           >
-            <p className="underline cursor-pointer">Related posts</p>
+            <p className="underline cursor-pointer md:text-base text-sm">
+              Related posts
+            </p>
             <div
               className={` rounded-md transform duration-500 ease-in-out ${
                 showMore ? " rotate-180" : "rotate-0"
@@ -173,38 +180,20 @@ const PostCard = ({ data }: { data: any }) => {
                 )}
               </div>
               <div className="flex justify-center items-center mt-5 gap-2">
-                {/* {relatedPost?.map((items: any, index: number) => {
-                  if (items.id !== data.id) {
-                    return (
-                      <p
-                        className="w-2 h-2 bg-brand-gray-500 rounded-full"
-                        key={index}
-                      >
-                        {}
-                      </p>
-                    );
-                  }
-                })} */}
                 {relatedPost && relatedPost.length > 1 && (
                   <div className="flex  justify-between gap-10 items-center">
                     <button
-                      className=" bg-brand-gray-800  h-10 w-10 border-white border-2 left-16 sm:hidden  flex items-center justify-center rounded-full bottom-0 z-20 "
+                      className=" bg-neutral-950   h-10 w-10 border-white border-2 left-16 sm:hidden  flex items-center justify-center rounded-full bottom-0 z-20 "
                       onClick={() => handleBackWardScroll(data.id)}
                     >
-                      <IoIosArrowBack
-                        className="text-brand-green-300"
-                        size={20}
-                      />
+                      <IoIosArrowBack className="text-primary" size={20} />
                     </button>
                     {/* Backward Button for scrolling in small screen */}
                     <button
-                      className="  bg-brand-gray-800  h-10 w-10 border-white border-2 right-16 sm:hidden  flex items-center justify-center rounded-full  z-20 bottom-0"
+                      className="  bg-neutral-950  h-10 w-10 border-white border-2 right-16 sm:hidden  flex items-center justify-center rounded-full  z-20 bottom-0"
                       onClick={() => handleForwardScroll(data.id)}
                     >
-                      <IoIosArrowForward
-                        className="text-brand-green-300"
-                        size={20}
-                      />
+                      <IoIosArrowForward className="text-primary" size={20} />
                     </button>{" "}
                   </div>
                 )}
