@@ -81,6 +81,7 @@ const config: Config = {
     },
   },
   plugins: [
+
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
@@ -104,6 +105,7 @@ const config: Config = {
         { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
       );
     },
+
   ],
 };
 export default config;

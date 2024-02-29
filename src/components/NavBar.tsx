@@ -13,13 +13,12 @@ import { useFilterStore } from "@/hooks/state/filter";
 import { FilterStoreType } from "@/hooks/state/filter";
 import { useUserStore } from "@/hooks/state/userState";
 import { useTheme } from "next-themes";
+import DarkMode from "./common/DarkMode";
 export default function NavBar({
   isStarting = false,
 }: {
   isStarting?: boolean;
 }) {
-  const { theme, setTheme } = useTheme();
-  const [isCheck, setCheck] = useState<boolean>(false);
   const router = useRouter();
   const user = useUserStore((state) => state.user);
   const setPage = useFilterStore((state: FilterStoreType) => state.setPage);
@@ -35,13 +34,7 @@ export default function NavBar({
     setSearchText(debouncedValue);
     setPage(1);
   }, [debouncedValue, setPage, setSearchText]);
-  const handleThemeChange = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
+
   const menuLinks = [
     {
       name: "Case Studies",
@@ -137,13 +130,9 @@ export default function NavBar({
           >
             <span className=" font-gt-walsheim-regular text-lg">Explore</span>
           </Link>
-          <button
-            className=" font-gt-walsheim-regular text-lg border-b-2 border-b-transparent hover:border-b-primary outline-none "
-            onClick={() => handleThemeChange()}
-          >
-            Toggle Theme{" "}
-          </button>
-          {/* <select name="" id=""></select> */}
+          <DarkMode />
+          {/* <button
+       Togglect name="" id=""></select> */}
         </div>
       </div>
     </div>
