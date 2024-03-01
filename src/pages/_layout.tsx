@@ -25,6 +25,7 @@ const PageLayout = ({
           name="description"
           content="Techium Frontend with Next.js and Tailwind CSS"
         />
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/imgs/favi.png" />
       </Head>

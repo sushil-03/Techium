@@ -147,7 +147,6 @@ export const getRelatedPost = async (options: RelatedProductFilterType) => {
 
 
   const res: any = await request(temp, document, variables)
-  console.log('boyaa', res);
 
   return res.relatedPosts;
   // client.query({

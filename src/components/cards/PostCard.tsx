@@ -36,7 +36,6 @@ const PostCard = ({ data }: { data: any }) => {
     revenue: data.revenue,
     tags: data.tags,
   };
-  console.log("file", filterOptions);
 
   const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -73,7 +72,6 @@ const PostCard = ({ data }: { data: any }) => {
       }
     }, speed);
   }
-  console.log("related post", relatedPost);
 
   return (
     <div className="w-full sm:px-6 px-3 py-6 dark:bg-neutral-900 dark:text-textColor-dark text-textColor-light bg-gray-100 md:px-8 overflow-hidden">
