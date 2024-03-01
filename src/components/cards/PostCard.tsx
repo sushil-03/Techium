@@ -97,7 +97,7 @@ const PostCard = ({ data }: { data: any }) => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4 flex-wrap">
+          <div className=" items-center gap-4 flex-wrap sm:flex hidden">
             {data.tags.map((item: string, index: number) => (
               <p
                 key={index}
@@ -118,7 +118,7 @@ const PostCard = ({ data }: { data: any }) => {
                 : data.title)}
           </p>
           {/* <p className="mt-2 text-brand-primary  w-5/6 h-12">{data.body}</p> */}
-          <div className="mt-2 dark:text-brand-gray-700 text-gray-700  w-5/6 h-14 font-gt-walsheim-regular font-normal md:text-lg sm:text-md xs:text-sm post">
+          <div className="mt-2 dark:text-brand-gray-700 text-gray-700  w-5/6 sm:h-14 h-12 font-gt-walsheim-regular font-normal md:text-lg sm:text-md xs:text-sm post">
             {data.freebody ? parse(data.freebody.html) : ""}
           </div>
         </div>

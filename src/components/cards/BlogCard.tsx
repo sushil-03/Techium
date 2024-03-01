@@ -18,7 +18,7 @@ export default function BlogCard({ data, className }: BlogCardProps) {
             : data?.title)}
       </p>
       <div className="flex flex-col gap-3">
-        <div className=" overflow-hidden  h-48 w-80 relative">
+        <div className=" overflow-hidden  h-48 md:w-80 w-60 relative">
           <Image
             // src=""
             src={`${data ? data.banner.url : "/assets/imgs/img2.png"}`}
