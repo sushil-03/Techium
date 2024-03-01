@@ -91,7 +91,7 @@ const PostCard = ({ data }: { data: any }) => {
             </div>
             <div>
               <p className="whitespace-nowrap">{data.dloguser.name}</p>
-              <p className="text-gray-500  whitespace-nowrap font-gt-walsheim-light">
+              <p className="text-brand-gray-700  whitespace-nowrap font-gt-walsheim-light">
                 {data.dloguser.company}
               </p>
             </div>
@@ -118,7 +118,7 @@ const PostCard = ({ data }: { data: any }) => {
                 : data.title)}
           </p>
           {/* <p className="mt-2 text-brand-primary  w-5/6 h-12">{data.body}</p> */}
-          <div className="mt-2 dark:text-gray-300 text-gray-700  w-5/6 h-14 font-gt-walsheim-regular font-normal md:text-lg sm:text-md text-sm">
+          <div className="mt-2 dark:text-brand-gray-700 text-gray-700  w-5/6 h-14 font-gt-walsheim-regular font-normal md:text-lg sm:text-md xs:text-sm post">
             {data.freebody ? parse(data.freebody.html) : ""}
           </div>
         </div>

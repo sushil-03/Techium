@@ -71,15 +71,13 @@ const SideScroll = ({
                     <div
                       className={`w-6 h-6  rounded-full ${
                         active === tag.id
-                          ? " bg-brand-green-100"
+                          ? " bg-secondary"
                           : "bg-brand-gray-100"
                       }`}
                     ></div>
                     <div
                       className={`w-4 h-4  rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${
-                        active === tag.id
-                          ? "bg-brand-green-200"
-                          : "bg-brand-gray-300"
+                        active === tag.id ? "bg-primary" : "bg-brand-gray-300"
                       }`}
                     ></div>
                   </div>
@@ -89,7 +87,7 @@ const SideScroll = ({
                     active === tag.id ? "text-primary" : "text-brand-gray-500"
                   } leading-5 `}
                 >
-                  {tag.innerText} {tag.id}
+                  {tag.innerText}
                 </div>
               </div>
             </div>

@@ -133,14 +133,41 @@ h1 {
 .content ul {
   list-style-type: disc;
 }
+.content p {
+  margin: 15px 0px;
+}
 
+.content blockquote {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 .content ol {
   list-style-type: decimal;
 }
 .content h1 {
+  /* margin-top: 20px; */
   color: inherit;
 }
+.content h2 {
+  color: inherit;
+  font-size: 30px;
+  font-weight: bold;
+}
+.content strong {
+  color: inherit;
+  font-weight: bold!;
 
+  text-decoration: underline;
+}
+.content img {
+  height: 600px;
+  object-fit: cover;
+}
 /* React Modals */
 .ReactModal__Overlay {
   opacity: 0;
@@ -417,4 +444,9 @@ label[for="btn"]:after {
     #fff 0 calc(var(--sz) / 20),
     var(--lg) calc(var(--sz) / 3) calc(var(--sz) / 3)
   );
+}
+
+.post h1 {
+  color: inherit;
+  font-size: 20px;
 }

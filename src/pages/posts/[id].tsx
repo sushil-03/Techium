@@ -184,7 +184,7 @@ const ArticlePage = () => {
                   </div>
                   {/* About Author */}
                   <div className="flex items-center gap-4 py-2 border-y-2 border-brand-gray-300">
-                    <div className="">
+                    <div className=" w-44">
                       <Image
                         // src="/assets/imgs/user.png"
                         src={data.dloguser.profile.url}
@@ -194,10 +194,10 @@ const ArticlePage = () => {
                       />
                     </div>
                     <div className="">
-                      <p className="text-brand-gray-600 font-gt-walsheim-light text-lg  text-ellipsis overflow-hidden w-full">
+                      <p className="dark:text-brand-gray-300 text-black font-gt-walsheim-light text-lg  text-ellipsis overflow-hidden w-full">
                         {data.dloguser.name}
                       </p>
-                      <p className="text-brand-gray-600 font-gt-walsheim-light h-[60px]  text-ellipsis overflow-hidden w-full">
+                      <p className="dark:text-brand-gray-300 text-black font-gt-walsheim-light h-[50px]  text-ellipsis overflow-y-scroll w-full">
                         {data.dloguser.bio}
                       </p>
                     </div>
@@ -206,7 +206,8 @@ const ArticlePage = () => {
 
                 {/* Main content Rich Text  */}
                 <div
-                  className={`my-8 relative text-lg tracking-wide font-gt-walsheim-light content dark:text-textColor-dark text-textColor-light `}
+                  className={`my-8 relative text-lg tracking-wide font-gt-walsheim-light content dark:text-brand-gray-300 text-textColor-light `}
+                  // className={`my-8 relative text-lg tracking-wide font-gt-walsheim-light content dark:text-textColor-dark text-textColor-light `}
                 >
                   {/* {parse(data.body.html || "")} */}
 

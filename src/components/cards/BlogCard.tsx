@@ -18,26 +18,30 @@ export default function BlogCard({ data, className }: BlogCardProps) {
             : data?.title)}
       </p>
       <div className="flex flex-col gap-3">
-        <div className=" overflow-hidden w-full ">
+        <div className=" overflow-hidden  h-48 w-80 relative">
           <Image
             // src=""
             src={`${data ? data.banner.url : "/assets/imgs/img2.png"}`}
             alt="Image"
-            width={500}
-            height={350}
-            className="h-full w-full object-fit"
+            // width={500}
+            // height={350}
+            fill
+            className="h-full w-full  object-cover"
           />
         </div>
         <div className=" sm:flex hidden items-center flex-wrap justify-between">
           <span className="text-base font-gt-walsheim-regular font-medium ">
             {data?.category}
           </span>
-          <div className="relative w-32 h-fit flex justify-center">
-            <div className="bg-secondary h-3 w-full mt-4"></div>
-            <span className="text-xl absolute top-0 whitespace-nowrap font-gt-walsheim-regular font-bold">
-              {data?.revenue || "0"}
-            </span>
-          </div>
+
+          {data.revenue && data.revenue !== "0" && (
+            <div className="relative w-32 h-fit flex justify-center">
+              <div className="bg-secondary h-3 w-full mt-4"></div>
+              <span className="text-xl absolute top-0 whitespace-nowrap font-gt-walsheim-regular font-bold">
+                {data?.revenue || "0"}
+              </span>
+            </div>
+          )}
         </div>
       </div>
     </div>
