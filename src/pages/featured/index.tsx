@@ -39,7 +39,7 @@ const FeaturedArticle = () => {
                   {parser(homeData.description.html)}
                 </div>
               </div>
-              <div className="flex-1 w-full md:block hidden">
+              <div className="flex-1 w-full lg:block hidden">
                 <EmailCard
                   hero_image={homeData.hero_image}
                   case_studies={homeData.face_title}

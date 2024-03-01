@@ -183,13 +183,13 @@ const ArticlePage = () => {
                     <BiLogoFacebook size={24} className="text-brand-gray-500" />
                   </div>
                   {/* About Author */}
-                  <div className="flex items-center gap-4 py-3 border-y-2 border-brand-gray-300">
+                  <div className="flex items-center gap-4 py-2 border-y-2 border-brand-gray-300">
                     <div className="">
                       <Image
                         // src="/assets/imgs/user.png"
                         src={data.dloguser.profile.url}
-                        width={100}
-                        height={100}
+                        width={80}
+                        height={80}
                         alt=""
                       />
                     </div>
@@ -197,7 +197,7 @@ const ArticlePage = () => {
                       <p className="text-brand-gray-600 font-gt-walsheim-light text-lg  text-ellipsis overflow-hidden w-full">
                         {data.dloguser.name}
                       </p>
-                      <p className="text-brand-gray-600 font-gt-walsheim-light h-[70px]  text-ellipsis overflow-hidden w-full">
+                      <p className="text-brand-gray-600 font-gt-walsheim-light h-[60px]  text-ellipsis overflow-hidden w-full">
                         {data.dloguser.bio}
                       </p>
                     </div>

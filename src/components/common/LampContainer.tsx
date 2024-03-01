@@ -132,7 +132,7 @@ export const LampContainer = ({
         </div>
 
         <div
-          className="lg:grid xl:grid-cols-3 xl:grid-rows-2 lg:grid-cols-2 lg:grid-rows-2 lg:place-content-center px-2 lg:overflow-auto overflow-scroll gap-12 mb-6 flex flex-row no-scrollbar lg:w-full sm:w-[500px] w-[350px] flex-shrink-0"
+          className="lg:grid xl:grid-cols-3 xl:grid-rows-2 lg:grid-cols-2 lg:grid-rows-2 lg:place-content-center px-2 lg:overflow-auto overflow-scroll gap-12 mb-6 flex flex-row no-scrollbar lg:w-full sm:w-[500px] xs:w-[350px] w-[300px] flex-shrink-0 "
           id="container"
         >
           {isLoading || isFetching ? (
