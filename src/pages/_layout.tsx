@@ -23,10 +23,10 @@ const PageLayout = ({
         <title>Techium</title>
         <meta
           name="description"
-          content="ownerpreneur Frontend with Next.js and Tailwind CSS"
+          content="Techium Frontend with Next.js and Tailwind CSS"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/imgs/favi.png" />
       </Head>
       <MainContainer>
         <NavBar isStarting={isStarting} />

@@ -11,7 +11,7 @@ const Banner = () => {
             <div className="flex justify-between w-full gap-2 pl-6 pt-4 sm:gap-10 lg:gap-20 tab:gap-16 md:gap-12  md:px-12 ">
               {/* Heading */}
               <div className="sm:w-1/2  w-2/3">
-                <p className=" font-gt-super-ds-trial lg:text-3xl tab:text-2xl  md:text-xl  sm:text-lg text-md  font-semibold  md:leading-8 leading-6 lg:leading-10 border-2 border-red-600">
+                <p className=" font-gt-super-ds-trial lg:text-3xl tab:text-2xl  md:text-xl  sm:text-lg text-md  font-semibold  md:leading-8 leading-6 lg:leading-10">
                   Learn how people are starting successful business
                 </p>
                 <Image
