@@ -49,7 +49,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex mt-20 xl:h-[1400px] lg:h-[1500px]  sm:h-[1000px] h-[800px] flex-col items-center justify-center  bg-slate-950 w-full rounded-md z-0 ",
+        "relative flex mt-20 xl:h-[1400px] lg:h-[1500px]  sm:h-[1000px] xs:h-[800px] h-[600px] flex-col items-center justify-center  bg-slate-950 w-full rounded-md z-0 ",
         className
       )}
     >
@@ -115,7 +115,7 @@ export const LampContainer = ({
       <div className="relative z-50 flex  md:-translate-y-[300px] -translate-y-[200px]   flex-col items-center px-5 ">
         {children}
       </div>
-      <div className="relative lg:-translate-y-[140px]  -mt-20 overflow-scroll lg:pb-0 pb-16  ">
+      <div className="relative lg:-translate-y-[140px] -translate-y-[100px]  -mt-20 overflow-scroll lg:pb-0 pb-16  ">
         <div className="bg-slate-950   ">
           <button
             className=" bg-slate-950  absolute h-14 w-14 shadow-card-active lg:hidden  flex items-center justify-center rounded-full bottom-3  left-20"
@@ -132,7 +132,7 @@ export const LampContainer = ({
         </div>
 
         <div
-          className="lg:grid xl:grid-cols-3 xl:grid-rows-2 lg:grid-cols-2 lg:grid-rows-2 lg:place-content-center px-2 lg:overflow-auto overflow-scroll gap-12 mb-6 flex flex-row no-scrollbar lg:w-full sm:w-[500px] xs:w-[350px] w-[300px] flex-shrink-0 "
+          className="lg:grid xl:grid-cols-3 xl:grid-rows-2 lg:grid-cols-2 lg:grid-rows-2 lg:place-content-center px-2 lg:overflow-auto overflow-scroll gap-12 mb-6 flex flex-row no-scrollbar lg:w-full sm:w-[500px] xs:w-[350px] w-[330px] flex-shrink-0  "
           id="container"
         >
           {isLoading || isFetching ? (

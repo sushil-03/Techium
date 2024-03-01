@@ -55,7 +55,7 @@ const FeaturedPost = () => {
           className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center  font-medium tracking-tight text-transparent "
         >
           <div className=" w-full">
-            <p className="text-white text-5xl font-gt-super-ds-trial text-center ">
+            <p className="text-white md:text-5xl sm:text-4xl text-3xl font-gt-super-ds-trial text-center ">
               Featured Posts
             </p>
           </div>
