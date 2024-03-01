@@ -172,7 +172,6 @@ h1 {
 .content img {
   /* height: 500px; */
   /* display: none; */
-  border: 2px solid red;
   object-fit: contain;
 }
 @media screen and (min-width: 500) {

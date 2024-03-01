@@ -10,6 +10,7 @@ import { useFetchHomeData } from "@/hooks/query/getHomePageData";
 import parser from "html-react-parser";
 import { useUserStore } from "@/hooks/state/userState";
 import { IoDocumentText, IoRocket, IoBulb } from "react-icons/io5";
+import TextToSpeech from "@/components/common/TextToSpeech";
 export default function Home() {
   const user = useUserStore((state) => state.user);
   // Custom Scroll for small screen
@@ -88,6 +89,7 @@ export default function Home() {
             </em>
           </div>
           <div className="text-base flex items-center justify-center gap-4 ">
+            {/* <TextToSpeech text="<h1>I am </h1> Box <p>Hello HelloHelloHelloHello</p>  <h1>Understood</h1>" /> */}
             <Link href={"/featured"} className="">
               <Button
                 variant="primary"

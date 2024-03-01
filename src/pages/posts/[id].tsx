@@ -19,6 +19,7 @@ import { useFetchRelatedPost } from "@/hooks/query/getRelatedPost";
 import { handleGoogleLogin } from "@/endpoints/auth";
 import Link from "next/link";
 import { useUserStore } from "@/hooks/state/userState";
+import TextToSpeech from "@/components/common/TextToSpeech";
 
 const ArticlePage = () => {
   const router = useRouter();
@@ -107,7 +108,6 @@ const ArticlePage = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // console.log("uodata", updatedBody.html);
 
   return (
     <PageLayout>
@@ -174,14 +174,24 @@ const ArticlePage = () => {
                     {data.title}
                   </h1>
 
-                  <div className="flex items-center gap-4 mt-4 mb-8">
-                    <span className=" font-gt-walsheim-regular dark:text-textColor-dark text-textColor-light">
-                      Share on:{" "}
-                    </span>
-                    <BsTwitter size={20} className="text-brand-gray-500" />
-                    <BiLogoLinkedin size={25} className="text-brand-gray-500" />
-                    <BiLogoFacebook size={24} className="text-brand-gray-500" />
+                  <div className="flex items-center  mt-4 mb-2 justify-between w-full ">
+                    <div className="md:flex hidden items-center gap-4">
+                      <span className=" font-gt-walsheim-regular dark:text-textColor-dark text-textColor-light">
+                        Share on:{" "}
+                      </span>
+                      <BsTwitter size={20} className="text-brand-gray-500" />
+                      <BiLogoLinkedin
+                        size={25}
+                        className="text-brand-gray-500"
+                      />
+                      <BiLogoFacebook
+                        size={24}
+                        className="text-brand-gray-500"
+                      />
+                    </div>
+                    <div>{data && <TextToSpeech text={data.body.html} />}</div>
                   </div>
+
                   {/* About Author */}
                   <div className="flex items-center gap-4 py-2 border-y-2 border-brand-gray-300">
                     <div className="  ">
