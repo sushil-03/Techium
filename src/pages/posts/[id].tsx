@@ -174,8 +174,8 @@ const ArticlePage = () => {
                     {data.title}
                   </h1>
 
-                  <div className="flex items-center  mt-4 mb-2 justify-between w-full ">
-                    <div className="flex items-center gap-4">
+                  <div className="flex items-center  mt-4 mb-2 sm:justify-between justify-center w-full ">
+                    <div className="sm:flex hidden items-center gap-4">
                       <span className=" font-gt-walsheim-regular dark:text-textColor-dark text-textColor-light">
                         Share on:{" "}
                       </span>

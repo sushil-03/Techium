@@ -412,10 +412,10 @@ const TextToSpeech = ({ text }: { text: string }) => {
             type="range"
             min="0.1"
             max="3"
-            step="0.1"
+            step="0.3"
             value={rate}
             onChange={handleChangeRate}
-            className={`${speaking ? "hidden" : "block"}`}
+            className={`${speaking ? "hidden" : "block"} text-green-500`}
           />
         </div>
         <button
