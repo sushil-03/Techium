@@ -115,7 +115,7 @@ export const LampContainer = ({
       <div className="relative z-50 flex  md:-translate-y-[300px] -translate-y-[200px]   flex-col items-center px-5 ">
         {children}
       </div>
-      <div className="relative lg:-translate-y-[140px]  -mt-20 overflow-scroll lg:pb-0 pb-16 ">
+      <div className="relative lg:-translate-y-[140px]  -mt-20 overflow-scroll lg:pb-0 pb-16  ">
         <div className="bg-slate-950   ">
           <button
             className=" bg-slate-950  absolute h-14 w-14 shadow-card-active lg:hidden  flex items-center justify-center rounded-full bottom-3  left-20"
@@ -132,7 +132,7 @@ export const LampContainer = ({
         </div>
 
         <div
-          className="lg:grid xl:grid-cols-3 xl:grid-rows-2 lg:grid-cols-2 lg:grid-rows-2 lg:place-content-center px-2 lg:overflow-auto overflow-scroll gap-12 mb-6 flex flex-row no-scrollbar lg:w-full sm:w-[800px]  w-[400px] flex-shrink-0"
+          className="lg:grid xl:grid-cols-3 xl:grid-rows-2 lg:grid-cols-2 lg:grid-rows-2 lg:place-content-center px-2 lg:overflow-auto overflow-scroll gap-12 mb-6 flex flex-row no-scrollbar lg:w-full sm:w-[500px] w-[350px] flex-shrink-0"
           id="container"
         >
           {isLoading || isFetching ? (

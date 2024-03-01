@@ -127,7 +127,7 @@ export default function Home() {
         </div>
       </div>
       {data && (
-        <div className="flex flex-col justify-center items-center py-14 gap-28 px-6 md:px-12 ">
+        <div className="flex flex-col justify-center items-center py-14 gap-28 sm:px-6 px-3 md:px-12 ">
           {/* Buisness Tags */}
           <div className="container grid items-center grid-cols-3 p-0 xl:grid-cols-5 gap-14">
             <div className="col-span-3 xl:col-span-2 w-full max-w-lg rounded-[10px] h-[280px] md:h-[335px] flex flex-col justify-center items-center">
@@ -183,7 +183,7 @@ export default function Home() {
           </div>
 
           {/* Case Studies */}
-          <div className=" p-6 sm:px-14 sm:py-16 flex flex-col gap-12 md:gap-20 rounded-[10px] container dark:bg-[#1b1b1b]  bg-gray-100">
+          <div className=" xs:p-6 p-2 sm:px-14 sm:py-16 flex flex-col gap-12 md:gap-20 rounded-[10px] container dark:bg-[#1b1b1b]  bg-gray-100">
             <div className="grid items-center grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-20">
               <div className="flex flex-col items-start order-2 w-full max-w-lg gap-4 lg:gap-6 lg:order-1">
                 <h2 className=" text-4xl leading-[64px] sm:text-5xl sm:leading-[72px] dark:text-textColor-dark text-textColor-light font-gt-super-ds-trial">
@@ -236,7 +236,10 @@ export default function Home() {
                     if (!data.id) return;
                     return (
                       <Link href={`/posts/${data.id}`} key={index}>
-                        <BlogCard className="min-w-[280px]" data={data} />
+                        <BlogCard
+                          className="md:w-[280px] min-w-[200px]"
+                          data={data}
+                        />
                       </Link>
                     );
                   }
