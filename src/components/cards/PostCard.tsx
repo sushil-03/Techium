@@ -180,17 +180,17 @@ const PostCard = ({ data }: { data: any }) => {
                 )}
               </div>
               <div className="flex justify-center items-center mt-5 gap-2">
-                {relatedPost && relatedPost.length > 1 && (
+                {relatedPost && relatedPost.length > 2 && (
                   <div className="flex  justify-between gap-10 items-center">
                     <button
-                      className=" bg-neutral-950   h-10 w-10 border-white border-2 left-16 sm:hidden  flex items-center justify-center rounded-full bottom-0 z-20 "
+                      className=" bg-neutral-950   h-10 w-10  left-16 shadow-card-active sm:hidden  flex items-center justify-center rounded-full bottom-0 z-20 "
                       onClick={() => handleBackWardScroll(data.id)}
                     >
                       <IoIosArrowBack className="text-primary" size={20} />
                     </button>
                     {/* Backward Button for scrolling in small screen */}
                     <button
-                      className="  bg-neutral-950  h-10 w-10 border-white border-2 right-16 sm:hidden  flex items-center justify-center rounded-full  z-20 bottom-0"
+                      className="  bg-neutral-950  h-10 w-10  shadow-card-active right-16 sm:hidden  flex items-center justify-center rounded-full  z-20 bottom-0"
                       onClick={() => handleForwardScroll(data.id)}
                     >
                       <IoIosArrowForward className="text-primary" size={20} />

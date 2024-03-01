@@ -118,13 +118,13 @@ export const LampContainer = ({
       <div className="relative lg:-translate-y-[140px]  -mt-20 overflow-scroll lg:pb-0 pb-16 ">
         <div className="bg-slate-950   ">
           <button
-            className=" bg-slate-950  absolute h-14 w-14 border-white border-2  lg:hidden  flex items-center justify-center rounded-full bottom-6  left-20"
+            className=" bg-slate-950  absolute h-14 w-14 shadow-card-active lg:hidden  flex items-center justify-center rounded-full bottom-3  left-20"
             onClick={() => handleBackWardScroll()}
           >
             <IoIosArrowBack className="text-primary" size={25} />
           </button>
           <button
-            className="  bg-slate-950 absolute h-14 w-14 border-white border-2 right-20 lg:hidden  flex items-center justify-center rounded-full  bottom-6"
+            className="  bg-slate-950 absolute h-14 w-14 right-20 shadow-card-active lg:hidden  flex items-center justify-center rounded-full  bottom-3"
             onClick={() => handleForwardScroll()}
           >
             <IoIosArrowForward className="text-primary" size={25} />
@@ -135,32 +135,6 @@ export const LampContainer = ({
           className="lg:grid xl:grid-cols-3 xl:grid-rows-2 lg:grid-cols-2 lg:grid-rows-2 lg:place-content-center px-2 lg:overflow-auto overflow-scroll gap-12 mb-6 flex flex-row no-scrollbar lg:w-full sm:w-[800px]  w-[400px] flex-shrink-0"
           id="container"
         >
-          {isLoading || isFetching ? (
-            <div className="w-full h-full flex justify-center items-center">
-              {" "}
-            </div>
-          ) : (
-            data?.map((post: any, index: number) => {
-              return (
-                <Link href={`/posts/${post.id}`} key={index} className="">
-                  <BlogCard data={post} className=" rounded-none " />
-                </Link>
-              );
-            })
-          )}
-          {isLoading || isFetching ? (
-            <div className="w-full h-full flex justify-center items-center">
-              {" "}
-            </div>
-          ) : (
-            data?.map((post: any, index: number) => {
-              return (
-                <Link href={`/posts/${post.id}`} key={index} className="">
-                  <BlogCard data={post} className=" rounded-none " />
-                </Link>
-              );
-            })
-          )}{" "}
           {isLoading || isFetching ? (
             <div className="w-full h-full flex justify-center items-center">
               {" "}

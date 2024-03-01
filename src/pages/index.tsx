@@ -214,14 +214,14 @@ export default function Home() {
             </div>
             <div className="relative sm:pb-0 pb-20">
               <button
-                className=" bg-slate-900 absolute h-14 w-14 border-white border-2 left-16 sm:hidden  flex items-center justify-center rounded-full bottom-0 z-20 "
+                className=" bg-slate-900 absolute h-14 w-14  shadow-card-active left-16 sm:hidden  flex items-center justify-center rounded-full bottom-0 z-20 "
                 onClick={() => handleBackWardScroll()}
               >
                 <IoIosArrowBack className="text-primary" size={25} />
               </button>
 
               <button
-                className="  bg-slate-900 absolute h-14 w-14 border-white border-2 right-16 sm:hidden  flex items-center justify-center rounded-full  z-20 bottom-0"
+                className="  bg-slate-900 absolute h-14 w-14 shadow-card-active right-16 sm:hidden  flex items-center justify-center rounded-full  z-20 bottom-0"
                 onClick={() => handleForwardScroll()}
               >
                 <IoIosArrowForward className="text-primary" size={25} />

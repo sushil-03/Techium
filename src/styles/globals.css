@@ -135,6 +135,9 @@ h1 {
 .content ol {
   list-style-type: decimal;
 }
+.content h1 {
+  color: inherit;
+}
 
 /* React Modals */
 .ReactModal__Overlay {

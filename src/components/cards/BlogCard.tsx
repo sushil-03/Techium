@@ -8,17 +8,17 @@ export default function BlogCard({ data, className }: BlogCardProps) {
   const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
   return (
     <div
-      className={`rounded-[10px] flex flex-col  dark:bg-black bg-white 2xl:w-[400px] md:w-[380px] w-[340px] dark:text-textColor-dark
-      text-textColor-light justify-between p-6 h-[350px] z-50 ${className}`}
+      className={`rounded-[10px] flex flex-col  dark:bg-black bg-white 2xl:w-[400px] md:w-[380px] sm:w-[340px] w-[300px] dark:text-textColor-dark
+      text-textColor-light justify-between p-6 lg:h-[350px] sm:h-[340px]  h-[280px] z-50 ${className}`}
     >
-      <p className="md:text-xl text-lg font-semibold font-gt-walsheim-regular">
+      <p className="md:text-xl text-lg font-semibold font-gt-walsheim-regular ">
         {data?.title &&
           (data?.title.length > 50
             ? data?.title.substring(0, 50).concat("...")
             : data?.title)}
       </p>
       <div className="flex flex-col gap-3">
-        <div className=" overflow-hidden w-full h-48">
+        <div className=" overflow-hidden w-full ">
           <Image
             // src=""
             src={`${data ? data.banner.url : "/assets/imgs/img2.png"}`}

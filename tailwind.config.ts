@@ -59,7 +59,7 @@ const config: Config = {
       },
       boxShadow: {
         "card-active":
-          "inset 0px 1.5px 24px 0px #29432A, inset 0px -1.5px 24px 0px #29432A",
+          "inset 0px 1.5px 24px 0px #8a2be2, inset 0px -1.5px 24px 0px #8a2be2",
         "card-inactive":
           "inset 0px 1.5px 24px 0px #4C4C4C, inset 0px -1.5px 24px 0px #4C4C4C",
         icon: "inset 0px 1px 8px 0px #FFFFFF, inset 0px -1px 8px 0px #FFFFFF",
