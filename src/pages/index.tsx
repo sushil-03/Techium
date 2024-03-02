@@ -74,13 +74,13 @@ export default function Home() {
     <PageLayout>
       <div className="h-[50rem] w-full    dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <div className="md:flex hidden absolute pointer-events-none inset-0  items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
         <div className="flex gap-5 flex-col">
           <div className="flex gap-2  lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl text-3xl flex-col items-center guide">
             <strong className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-600 pt-8">
               Discover Boundless
-              <div className="absolute right-10 lg:shadow-[10px_0px_300px_100px_rgb(140,_44,_222)] shadow-[10px_0px_500px_60px_rgb(140,_44,_222)] rotate-90 w-[1px] h-[1px] rounded-tr-full bg-transparent margi"></div>
+              <div className="md:block hidden absolute right-10 lg:shadow-[10px_0px_300px_100px_rgb(140,_44,_222)] shadow-[10px_0px_500px_60px_rgb(140,_44,_222)] rotate-90 w-[1px] h-[1px] rounded-tr-full bg-transparent margi"></div>
             </strong>
 
             <em className="text-2xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-neutral-600 pb-8">

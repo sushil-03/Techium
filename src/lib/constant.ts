@@ -6,7 +6,7 @@ export const CompanyOptions = [
 ] as const;
 export const CountryOptions = [
   "Any type",
-  "Indi",
+  "India",
   "USA",
   "Japan",
   "Russia",
@@ -15,6 +15,10 @@ export const CountryOptions = [
 export const CategoryOptions = [
   "Any type",
   "Technology",
+  "Buisness",
+  "Ecommerce",
+  "Retails",
+  "Healthcare",
   "Aeroplane",
   "Monetory",
   "Invention",

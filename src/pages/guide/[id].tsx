@@ -192,8 +192,8 @@ const ArticlePage = () => {
                       <Image
                         // src="/assets/imgs/user.png"
                         src={`${BASE_URL}/assets/${data.author.profile_picture}`}
-                        width={100}
-                        height={100}
+                        width={80}
+                        height={80}
                         alt=""
                       />
                     </div>

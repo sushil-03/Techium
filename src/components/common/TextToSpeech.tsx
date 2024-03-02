@@ -415,7 +415,10 @@ const TextToSpeech = ({ text }: { text: string }) => {
             step="0.3"
             value={rate}
             onChange={handleChangeRate}
-            className={`${speaking ? "hidden" : "block"} text-green-500`}
+            className={` ${speaking ? "hidden" : "block"} bg-green-500`}
+            style={{
+              color: "red",
+            }}
           />
         </div>
         <button
